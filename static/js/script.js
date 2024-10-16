@@ -166,3 +166,10 @@ window.addEventListener("load", function () {
     pageLoading.style.opacity = "0";
   }, 100);
 });
+
+// 更新年份
+function initNowYear(){
+  const nowYear = document.getElementById("nowYear");
+  nowYear.innerHTML = new Date().getFullYear();
+}
+initNowYear()

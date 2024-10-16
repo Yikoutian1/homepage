@@ -658,7 +658,7 @@ footer {
     .a {
 
         width: calc(50% - 18px);
-  margin: 9px;
+        margin: 9px;
 
     }
 
@@ -688,7 +688,6 @@ footer {
 
     }
     .iconContainer {
-  
      margin-top: 4vw;
 
 }
@@ -717,20 +716,9 @@ footer {
     .skill #skillPc {
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
 
 
 
@@ -878,3 +866,16 @@ footer {
 }
 
 
+
+/*贪吃蛇动画优化*/
+#tanChiShe {
+    width: 100%; /* 根据需要调整大小 */
+    height: auto; /* 根据需要调整大小 */
+    display: block; /* 避免图片下方出现空隙 */
+}
+
+/* 启用GPU加速 */
+.tanChiShe {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
